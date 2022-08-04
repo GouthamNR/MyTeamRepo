@@ -12,13 +12,11 @@ public class MyOrdersPage {
 	public MyOrdersPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
-	
-	String TableXpath = "//th[.='Item']/ancestor::div[@class=\"row\"]//td";
-	String LinkText ;
-	@FindBy(xpath = "//td[.=' Yorkshire Lamb Patties']/ancestor::div[@class=\"row\"]//a[contains(@href,\"delete_orders.php?order\")]")
+	@FindBy(xpath = "//td[contains(., 'Lobster Thermidor')]/..//a[contains(@href,'delete_orders.php?order_del')]")
 	private WebElement DeleteYorkshireLambPatties;
 	
 	public void VerifyFood(WebDriver driver, String FoodName) {
+		String TableXpath = "//td[contains(text(),'"+FoodName+"')]";
 		List<WebElement> elements = driver.findElements(By.xpath(TableXpath));
 		for (WebElement data : elements) {
 			String name = data.getText();
@@ -32,7 +30,7 @@ public class MyOrdersPage {
 	}
 	
 	public void deleteFood(WebDriver driver, String FoodName) {
-		String DeleteButtonxpath = "//td[contains(.,' "+FoodName+" ')]/ancestor::div[@class=\"row\"]//a[contains(@href,\"delete_orders.php?order\")]";
+		String DeleteButtonxpath = "//td[contains(.,'"+FoodName+"')]/..//a[contains(@href,'delete_orders.php?order_del')]";
 		WebElement deleteButton = driver.findElement(By.xpath(DeleteButtonxpath));
 		deleteButton.click();
 	}
