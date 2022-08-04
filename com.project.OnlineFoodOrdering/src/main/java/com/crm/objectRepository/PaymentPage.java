@@ -39,7 +39,7 @@ public class PaymentPage
 	{
 		OrderNow.click();
 	}
-	//commentss
+	//commentss new
 
 }
 
