@@ -71,5 +71,4 @@ public class NanXiangXiaoLongBaoPage {
 		checkoutBtn.click(); 
 	}
 	
-	
 }
