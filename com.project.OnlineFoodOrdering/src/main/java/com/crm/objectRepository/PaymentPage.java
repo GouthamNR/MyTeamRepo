@@ -7,21 +7,18 @@ import org.openqa.selenium.support.PageFactory;
 
 public class PaymentPage 
 {
+	//Initialization
+
+	public PaymentPage(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+
+	}
 	// Declaration
 	@FindBy(xpath = "//span[.='Cash on Delivery']/..//span[@class='custom-control-indicator']") WebElement CashOnDelivery;
 	@FindBy(xpath = "//span[.='Paypal ']/..//span[@class='custom-control-indicator']") WebElement PayPal;
 	@FindBy(xpath = "//input[@type=\"submit\"]") WebElement OrderNow;
 
-	
-	//Initialization
-	
-		public PaymentPage(WebDriver driver)
-		{
-			PageFactory.initElements(driver, this);
-
-		}
-
-		//Declaration
 
 	public WebElement getCashOnDelivery() 
 	{
@@ -39,7 +36,7 @@ public class PaymentPage
 	{
 		OrderNow.click();
 	}
-	//commentss new
+	//new
 
 }
 
