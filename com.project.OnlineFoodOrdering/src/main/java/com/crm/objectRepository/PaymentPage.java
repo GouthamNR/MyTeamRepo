@@ -36,7 +36,7 @@ public class PaymentPage
 	{
 		OrderNow.click();
 	}
-	//new
+	//new edi
 
 }
 
