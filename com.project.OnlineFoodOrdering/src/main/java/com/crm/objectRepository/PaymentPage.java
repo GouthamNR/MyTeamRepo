@@ -35,6 +35,10 @@ public class PaymentPage
 	{
 		return OrderNow;
 	}
+	public void OrderNow()
+	{
+		OrderNow.click();
+	}
 
 }
 
