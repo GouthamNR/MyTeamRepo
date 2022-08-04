@@ -9,6 +9,7 @@ public class HighlandsBarAndGrillPage {
 public HighlandsBarAndGrillPage(WebDriver driver) {
 	PageFactory.initElements(driver, this);
 }
+//High
 @FindBy(xpath="//a[.='Chicken Madeira']/ancestor::div[@class='food-item']//input[@value='Add To Cart']") 
 private WebElement ChickenMadeiraAddToCartButton;
 @FindBy(xpath="//a[.=' Buffalo Wings']/ancestor::div[@class='food-item']//input[@value='Add To Cart']") 
