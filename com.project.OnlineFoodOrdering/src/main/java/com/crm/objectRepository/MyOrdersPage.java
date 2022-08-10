@@ -22,6 +22,7 @@ public class MyOrdersPage {
 			String name = data.getText();
 			if (name.contains(FoodName)) {
 				System.out.println("Food order Created");
+				break;
 			}
 			else {
 				System.out.println("FAIL : Order NOt Created");
