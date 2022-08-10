@@ -1,7 +1,9 @@
 package com.crm.objectRepository;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import com.crm.genericUtilities.WebDriverUtility;
 /**
@@ -9,7 +11,12 @@ import com.crm.genericUtilities.WebDriverUtility;
  * @author SanjayBabu
  * 
  */
-public class WelcomePage extends WebDriverUtility{
+public class WelcomePage {
+	//initalization
+	public WelcomePage(WebDriver driver) {
+		PageFactory.initElements(driver, this);
+	}
+	
 	//WebDriver driver;
 	//declaretion
 	@FindBy(xpath = "//a[text()='Home ']") private WebElement Homelink;
