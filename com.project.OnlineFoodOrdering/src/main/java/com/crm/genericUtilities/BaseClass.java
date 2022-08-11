@@ -103,10 +103,9 @@ public class BaseClass
 		} catch (Throwable e) {
 			e.printStackTrace();
 		}
-
-		LoginPage lpage=new LoginPage(driver);
-		lpage.loginToAppli(USERNAME, PASSWORD);
-		System.out.println("Login successful");
+		
+		LoginPage loginpage = new LoginPage(driver);
+		loginpage.loginToAppli(driver,USERNAME, PASSWORD);
 	}
 	/**
 	 * logout from application

@@ -10,7 +10,7 @@ public class PaymentPage
 	// Declaration
 	@FindBy(xpath = "//span[.='Cash on Delivery']/..//span[@class='custom-control-indicator']") WebElement CashOnDelivery;
 	@FindBy(xpath = "//span[.='Paypal ']/..//span[@class='custom-control-indicator']") WebElement PayPal;
-	@FindBy(xpath = "//input[@type=\"submit\"]") WebElement OrderNow;
+	@FindBy(xpath = "//input[@type='submit']") WebElement OrderNow;
 
 	
 	//Initialization
