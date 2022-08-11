@@ -8,9 +8,14 @@ import org.openqa.selenium.support.PageFactory;
 import com.crm.genericUtilities.WebDriverUtility;
 /**
  * 
- * @author SanjayBabu
- * 
+ * @author Goutham
+ *
  */
+public class WelcomePage {
+	
+	public WelcomePage(WebDriver driver) {
+		PageFactory.initElements(driver, this);
+	}
 public class WelcomePage 
 {
 	//initialization

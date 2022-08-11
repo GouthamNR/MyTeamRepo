@@ -42,6 +42,10 @@ public class LoginPage {
 	 * click on submit button
 	 */
 
+	public void loginToAppli(WebDriver driver,  String username,String password)
+	{
+		WelcomePage welcompage = new WelcomePage(driver);
+		welcompage.getLoginLink().click();
 	public void loginToAppli(WebDriver driver,String username,String password)
 	{
 		WelcomePage welcome = new WelcomePage(driver);

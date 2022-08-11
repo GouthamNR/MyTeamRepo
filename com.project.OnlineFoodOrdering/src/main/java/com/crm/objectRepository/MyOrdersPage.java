@@ -15,7 +15,7 @@ public class MyOrdersPage {
 	public MyOrdersPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
-	@FindBy(xpath = "//td[contains(., 'Lobster Thermidor')]/..//a[contains(@href,'delete_orders.php?order_del')]")
+	@FindBy(xpath = "//td[contains(., 'Lobster Thermidor')]/..//a[contains(@href,'delete_orders.php?order_del')]")     
 	private WebElement DeleteYorkshireLambPatties;
 	
 	public void VerifyFood(WebDriver driver, String FoodName) {

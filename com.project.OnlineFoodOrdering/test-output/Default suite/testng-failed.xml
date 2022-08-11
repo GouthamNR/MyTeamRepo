@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+      <class name="com.ecom.OFO.home.HomeTest">
       <class name="com.project.OnlineFoodOrdering.RestaurantsModule.RestaurantModuleTest">
       <class name="com.ofos.RestaurantsModuleTest.RestaurantsModuleTest">
         <methods>
           <include name="endToEndTestingRestaurant_Tc30Test"/>
           <include name="logoutFromAppln"/>
+          <include name="ToSelectOneDishTest"/>
           <include name="closeDBconfig"/>
           <include name="loginToAppln"/>
           <include name="closeTheBrowser"/>
@@ -15,6 +17,7 @@
           <include name="launchTheBrowser"/>
           <include name="dbConfig"/>
         </methods>
+      </class> <!-- com.ecom.OFO.home.HomeTest -->
       </class> <!-- com.project.OnlineFoodOrdering.RestaurantsModule.RestaurantModuleTest -->
       </class> <!-- com.ofos.RestaurantsModuleTest.RestaurantsModuleTest -->
     </classes>
