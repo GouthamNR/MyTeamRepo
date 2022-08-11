@@ -1,4 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-10T17:12:05 IST" name="Default suite" finished-at="2022-08-10T17:12:19 IST" duration-ms="13634">
+    <groups>
+    </groups>
+    <test started-at="2022-08-10T17:12:05 IST" name="Default test" finished-at="2022-08-10T17:12:19 IST" duration-ms="13634">
+      <class name="com.project.OnlineFoodOrdering.RestaurantsModule.RestaurantModuleTest">
+        <test-method is-config="true" signature="dbConfig()[pri:0, instance:com.project.OnlineFoodOrdering.RestaurantsModule.RestaurantModuleTest@38cee291]" started-at="2022-08-10T17:12:05 IST" name="dbConfig" finished-at="2022-08-10T17:12:05 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dbConfig -->
+        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:com.project.OnlineFoodOrdering.RestaurantsModule.RestaurantModuleTest@38cee291]" started-at="2022-08-10T17:12:05 IST" name="launchTheBrowser" finished-at="2022-08-10T17:12:15 IST" duration-ms="9460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchTheBrowser -->
+        <test-method is-config="true" signature="loginToAppln()[pri:0, instance:com.project.OnlineFoodOrdering.RestaurantsModule.RestaurantModuleTest@38cee291]" started-at="2022-08-10T17:12:15 IST" name="loginToAppln" finished-at="2022-08-10T17:12:16 IST" duration-ms="792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToAppln -->
+        <test-method signature="endToEndTestingRestaurant_Tc30Test()[pri:0, instance:com.project.OnlineFoodOrdering.RestaurantsModule.RestaurantModuleTest@38cee291]" started-at="2022-08-10T17:12:16 IST" name="endToEndTestingRestaurant_Tc30Test" finished-at="2022-08-10T17:12:18 IST" duration-ms="2278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endToEndTestingRestaurant_Tc30Test -->
+        <test-method is-config="true" signature="logoutFromAppln()[pri:0, instance:com.project.OnlineFoodOrdering.RestaurantsModule.RestaurantModuleTest@38cee291]" started-at="2022-08-10T17:12:18 IST" name="logoutFromAppln" finished-at="2022-08-10T17:12:19 IST" duration-ms="612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromAppln -->
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:com.project.OnlineFoodOrdering.RestaurantsModule.RestaurantModuleTest@38cee291]" started-at="2022-08-10T17:12:19 IST" name="closeTheBrowser" finished-at="2022-08-10T17:12:19 IST" duration-ms="416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTheBrowser -->
+        <test-method is-config="true" signature="closeDBconfig()[pri:0, instance:com.project.OnlineFoodOrdering.RestaurantsModule.RestaurantModuleTest@38cee291]" started-at="2022-08-10T17:12:19 IST" name="closeDBconfig" finished-at="2022-08-10T17:12:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDBconfig -->
+      </class> <!-- com.project.OnlineFoodOrdering.RestaurantsModule.RestaurantModuleTest -->
 <testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>

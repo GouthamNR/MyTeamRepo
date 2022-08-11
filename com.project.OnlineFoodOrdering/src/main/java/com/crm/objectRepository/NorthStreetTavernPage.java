@@ -22,10 +22,26 @@ public class NorthStreetTavernPage {
 	private WebElement LobsterThermidorQuantityTextField;
 	@FindBy(xpath = "//a[text()='Stuffed Jacket Potatoes']/ancestor::div[@class='food-item']//input[@name='quantity']")
 	private WebElement StuffedJacketPotatoesQuantityTextField;
+	@FindBy(xpath="//div[@class='widget-body']//div[contains(.,'Yorkshire Lamb Patties')]//i")
+	private WebElement DeleteFromCartYorkshireLambPatties;
+	@FindBy(xpath="//div[@class='widget-body']//div[contains(.,'Lobster Thermidor')]//i")
+	private WebElement DeleteFromCartLobsterThermidor;
+	@FindBy (xpath = "//div[@class='widget-body']//div[contains(.,'Stuffed Jacket Potatoes')]//i")
+	private WebElement DeleteFromCartStuffedJacketPotatoes;
+	
 	@FindBy(xpath = "//a[.='Checkout']") private WebElement CheckoutButton;
 	
 	public WebElement getYorkshireLambPattiesAddToCartButton() {
 		return YorkshireLambPattiesAddToCartButton;
+	}
+	public WebElement getDeleteFromCartYorkshireLambPatties() {
+		return DeleteFromCartYorkshireLambPatties;
+	}
+	public WebElement getDeleteFromCartLobsterThermidor() {
+		return DeleteFromCartLobsterThermidor;
+	}
+	public WebElement getDeleteFromCartStuffedJacketPotatoes() {
+		return DeleteFromCartStuffedJacketPotatoes;
 	}
 	public WebElement getLobsterThermidorAddToCartButton() {
 		return LobsterThermidorAddToCartButton;
@@ -47,6 +63,7 @@ public class NorthStreetTavernPage {
 	}
 	
 	public void setYorkshireLambPattiesQuantity(String Quantity) {
+		
 		getYorkshireLambPattiesQuantityTextField().sendKeys(Quantity);
 	}
 	
@@ -56,6 +73,11 @@ public class NorthStreetTavernPage {
 	
 	public void setStuffedJacketPotatoesQuantity(String Quantity) {
 		getStuffedJacketPotatoesQuantityTextField().sendKeys(Quantity);
+	}
+	
+	public void clearQtyTextField(WebElement element)
+	{
+		element.clear();
 	}
 	
 	public void checkOut() {

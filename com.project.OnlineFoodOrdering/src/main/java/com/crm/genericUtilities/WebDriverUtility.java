@@ -359,4 +359,15 @@ public class WebDriverUtility {
 		JavascriptExecutor javaScript = (JavascriptExecutor)driver;
 		javaScript.executeScript("window.scrollBy(0,500)");
 	}
+	
+	public void moveToElementAndClick(WebDriver driver,WebElement element)
+	{
+		Actions action = new Actions(driver);
+		action.moveToElement(element).click().perform();
+	}
+	public boolean toCheckEnableOrNot(WebElement element)
+	{
+		boolean button = element.isEnabled();
+		return button;
+	}
 }
