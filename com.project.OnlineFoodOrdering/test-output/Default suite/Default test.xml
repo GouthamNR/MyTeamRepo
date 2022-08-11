@@ -4,4 +4,23 @@
   <testcase classname="com.dataProvider.DataProviderClass" name="accepter" time="0.009"/>
   <testcase classname="com.dataProvider.DataProviderClass" name="accepter" time="0.002"/>
   <testcase classname="com.dataProvider.DataProviderClass" name="accepter" time="0.004"/>
+<testsuite ignored="2" hostname="DESKTOP-HTDTJ7L" failures="0" tests="1" name="Default test" time="13.634" errors="0" timestamp="2022-08-10T17:12:19 IST">
+  <testcase classname="com.project.OnlineFoodOrdering.RestaurantsModule.RestaurantModuleTest" name="endToEndTestingRestaurant_Tc30Test" time="2.278"/>
+  <testcase classname="com.project.OnlineFoodOrdering.RestaurantsModule.RestaurantModuleTest" name="endToEndTestingRestaurant_Tc06Test" time="0.0">
+    <ignored/>
+  </testcase> <!-- endToEndTestingRestaurant_Tc06Test -->
+  <testcase classname="com.project.OnlineFoodOrdering.RestaurantsModule.RestaurantModuleTest" name="endToEndTestingRestaurant_Tc10Test" time="0.0">
+    <ignored/>
+  </testcase> <!-- endToEndTestingRestaurant_Tc10Test -->
+<testsuite ignored="3" hostname="DESKTOP-6HMH41Q" failures="0" tests="1" name="Default test" time="36.233" errors="0" timestamp="2022-08-10T17:12:52 IST">
+  <testcase classname="com.ofos.RestaurantsModuleTest.RestaurantsModuleTest" name="tc_12clickResteaurantSelectFood" time="5.921"/>
+  <testcase classname="com.ofos.RestaurantsModuleTest.RestaurantsModuleTest" name="tc_8ResteaurantSelectfood" time="0.0">
+    <ignored/>
+  </testcase> <!-- tc_8ResteaurantSelectfood -->
+  <testcase classname="com.ofos.RestaurantsModuleTest.RestaurantsModuleTest" name="clickrestaurant" time="0.0">
+    <ignored/>
+  </testcase> <!-- clickrestaurant -->
+  <testcase classname="com.ofos.RestaurantsModuleTest.RestaurantsModuleTest" name="resteaurantSelectTheFood" time="0.0">
+    <ignored/>
+  </testcase> <!-- resteaurantSelectTheFood -->
 </testsuite> <!-- Default test -->

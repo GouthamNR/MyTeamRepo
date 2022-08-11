@@ -46,6 +46,12 @@ public class LoginPage {
 	{
 		WelcomePage welcompage = new WelcomePage(driver);
 		welcompage.getLoginLink().click();
+	public void loginToAppli(WebDriver driver,String username,String password)
+	{
+		WelcomePage welcome = new WelcomePage(driver);
+		welcome.getLoginLink().click();
+		WelcomePage welcom=new WelcomePage(driver);
+		welcom.getLoginLink().click();
 		usernameTextField.sendKeys(username);
 		passwordTextField.sendKeys(password);
 		submitButton.click();
