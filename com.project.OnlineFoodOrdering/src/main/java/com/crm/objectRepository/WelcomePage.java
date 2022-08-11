@@ -16,6 +16,9 @@ public class WelcomePage
 	//initialization
 	public WelcomePage(WebDriver driver)
 	{
+public class WelcomePage {
+	//initalization
+	public WelcomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 	

@@ -30,6 +30,8 @@ public class NanXiangXiaoLongBaoPage {
 	private WebElement springRollQtyTxtFld;
 	@FindBy(xpath="//a[text()='Manchurian Chicken']/ancestor::div[@class='food-item']//input[@name='quantity']")
 	private WebElement manchurianChickenTxtFld;
+	
+	
 
 	@FindBy(xpath="//a[text()='Checkout']")
 	private WebElement checkoutBtn;
@@ -52,6 +54,10 @@ public class NanXiangXiaoLongBaoPage {
 	}
 	public WebElement getManchurianChickenAddToCartBtn() {
 		return manchurianChickenAddToCartBtn;
+	}
+	
+	public void clearVegetableFriedRiceQty() {
+		vegetableFriedRiceQtyTxtFld.clear();
 	}
 
 	public void setQtyvegetableFriedRice(String qty) {
