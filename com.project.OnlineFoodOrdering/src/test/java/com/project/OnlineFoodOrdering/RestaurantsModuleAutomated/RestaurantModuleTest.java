@@ -1,4 +1,4 @@
-package com.project.OnlineFoodOrdering.RestaurantsModuleAutomate;
+package com.project.OnlineFoodOrdering.RestaurantsModuleAutomated;
 
 import static org.testng.Assert.assertTrue;
 
@@ -64,7 +64,7 @@ public class RestaurantModuleTest extends BaseClass
 	  	
 		}
 	
-	
+	// stish
 	
 
 }

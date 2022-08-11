@@ -1,4 +1,4 @@
-package com.project.OnlineFoodOrdering.HomeModuleAutomate;
+package com.project.OnlineFoodOrdering.HomeModuleAutomated;
 
 import org.testng.annotations.Test;
 
@@ -17,6 +17,8 @@ public class HomeModuleTest extends BaseClass
 	@Test(enabled = false)
 	public void endToEndTestingHomeModule_Tc01Test()
 	{
+		//satish 
+		
 		HomePage homePage = new HomePage(driver);
 		homePage.getYorkshireLambPattiesOrderLink().click();
 		
