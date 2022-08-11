@@ -105,7 +105,7 @@ public class BaseClass
 		}
 
 		LoginPage lpage=new LoginPage(driver);
-		lpage.loginToAppli(USERNAME, PASSWORD);
+		lpage.loginToAppli(driver, USERNAME, PASSWORD);
 		System.out.println("Login successful");
 	}
 	/**

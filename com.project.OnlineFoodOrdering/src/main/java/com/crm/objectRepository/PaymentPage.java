@@ -15,10 +15,20 @@ public class PaymentPage
 
 	}
 	// Declaration
-	@FindBy(xpath = "//span[.='Cash on Delivery']/..//span[@class='custom-control-indicator']") WebElement CashOnDelivery;
-	@FindBy(xpath = "//span[.='Paypal ']/..//span[@class='custom-control-indicator']") WebElement PayPal;
-	@FindBy(xpath = "//input[@type=\"submit\"]") WebElement OrderNow;
+	@FindBy(xpath = "//span[.='Cash on Delivery']/..//span[@class='custom-control-indicator']")  private  WebElement CashOnDelivery;
+	@FindBy(xpath = "//span[.='Paypal ']/..//span[@class='custom-control-indicator']") private WebElement PayPal;
+	@FindBy(xpath = "//input[@type=\"submit\"]")  private WebElement OrderNow;
 
+	
+	//Initialization
+	
+		public PaymentPage(WebDriver driver)
+		{
+			PageFactory.initElements(driver, this);
+
+		}
+
+		//utilization
 
 	public WebElement getCashOnDelivery() 
 	{
