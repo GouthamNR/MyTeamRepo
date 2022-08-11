@@ -7,6 +7,13 @@ import org.openqa.selenium.support.PageFactory;
 
 public class PaymentPage 
 {
+	//Initialization
+
+	public PaymentPage(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+
+	}
 	// Declaration
 	@FindBy(xpath = "//span[.='Cash on Delivery']/..//span[@class='custom-control-indicator']")  private  WebElement CashOnDelivery;
 	@FindBy(xpath = "//span[.='Paypal ']/..//span[@class='custom-control-indicator']") private WebElement PayPal;
@@ -35,6 +42,11 @@ public class PaymentPage
 	{
 		return OrderNow;
 	}
+	public void OrderNow()
+	{
+		OrderNow.click();
+	}
+	//new editq
 
 }
 
